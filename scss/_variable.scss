@@ -1,0 +1,63 @@
+// TEXT
+// Font weight:
+$fw-extraLight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semiBold: 600;
+// Font-size:
+$fs-base: 16px;
+$fs-2xl: 20px;
+$fs-2xl4: 24px;
+$fs-3xl: 30px;
+$fs-4xl: 40px;
+// Color:
+$color-c1-dark: #000000;        // all
+$color-c2-dark: #140101;        // p
+$color-c3-dark: #1E1D1D;        // sixe number
+$color-c1-secondary: #CBC9C9;   // descript
+$color-c4-light: #F6F6F6;       // header
+$color-c3-light: #FFF8F8;       // add button
+$color-c2-light: #FFFCFC;       // submit button
+$color-c1-light: #FFFFFF;       // buy button
+$color-c1-success: #1ED90E;     // size
+$color-c2-danger: #F50E0E;      // {*}
+$color-c1-danger: #FC0303;      // money
+// Mixin
+@mixin text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
+// BACKGROUND
+// Color:
+$bg-c1-dark: #000000;       // header
+$bg-c1-secondary: #CCCCCC;  // size number box
+$bg-c2-secondary: #DEDDDC;  // product money box
+$bg-c3-light: #F8F8F8;      // product box
+$bg-c2-light: #F5F5F5;      // all
+$bg-c1-light: #FFFCFC;      // product body
+$bg-c2-warning: #E1B067;    // product buy button
+$bg-c1-warning: #F8B653;    // buy button
+$bg-c1-violet: #AE18E2;     // submit button
+
+.background-linear-1{   // +/- button
+    background: rgb(97,129,243);
+    background: linear-gradient(180deg, rgba(97,129,243,1) 0%, rgba(124,151,245,1) 99.48%);
+}
+.background-linear-2{   // add button
+    background: rgb(62,32,248);
+    background: linear-gradient(270deg, rgba(62,32,248,0.9) 5.14%, rgba(208,23,238,1) 89.71%);
+}
+
+// BORDER
+$bd-5-s-violet: 5px solid #AE18E2;     // input
+
+// BUTTON
+@mixin button($py, $px, $bg, $bd, $br) {
+    padding: $py $px;
+    background: $bg;
+    border-radius: $br;
+    border: 2px solid $bd;
+}
