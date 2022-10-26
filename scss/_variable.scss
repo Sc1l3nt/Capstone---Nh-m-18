@@ -12,17 +12,17 @@ $fs-2xl4: 24px;
 $fs-3xl: 30px;
 $fs-4xl: 40px;
 // Color:
-$color-c1-dark: #000000;        // all
-$color-c2-dark: #140101;        // p
-$color-c3-dark: #1E1D1D;        // sixe number
-$color-c1-secondary: #CBC9C9;   // descript
-$color-c4-light: #F6F6F6;       // header
-$color-c3-light: #FFF8F8;       // add button
-$color-c2-light: #FFFCFC;       // submit button
-$color-c1-light: #FFFFFF;       // buy button
-$color-c1-success: #1ED90E;     // size
-$color-c2-danger: #F50E0E;      // {*}
-$color-c1-danger: #FC0303;      // money
+$text-c1-dark: #000000;        // all
+$text-c2-dark: #140101;        // p
+$text-c3-dark: #1E1D1D;        // sixe number
+$text-c1-secondary: #CBC9C9;   // descript
+$text-c4-light: #F6F6F6;       // header
+$text-c3-light: #FFF8F8;       // add button
+$text-c2-light: #FFFCFC;       // submit button
+$text-c1-light: #FFFFFF;       // buy button
+$text-c1-success: #1ED90E;     // size
+$text-c2-danger: #F50E0E;      // {*}
+$text-c1-danger: #FC0303;      // money
 // Mixin
 @mixin text($fs, $fw, $color) {
     font-size: $fs;
