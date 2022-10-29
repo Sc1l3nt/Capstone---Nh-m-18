@@ -1,4 +1,3 @@
-let value = '';
 function getAllProduct(id) {
     let promise = axios({
         url: 'https://shop.cyberlearn.vn/api/Product',
@@ -7,8 +6,7 @@ function getAllProduct(id) {
 
     promise.then(function (res) {
         console.log('res:', res);
-        value = res.data.content;
-        renderProductCard(value, id);
+        renderProductCard(res.data.content, id);
     });
 
     promise.catch(function (err) {

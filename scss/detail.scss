@@ -6,7 +6,71 @@
 
 // Header
 
-// Carousel
+// Product detail
+.detail{
+    .main{
+        margin: 58px 65px 53px 65px;
+        .img{
+            text-align: center;
+            background: $bg-c3-light;
+            img{
+                margin-top: 30%;
+                margin-bottom: 10%;
+                width: 60%;
+            }
+        }
+        .info{
+            margin-left: 10%;
+            margin-right: 15%;
+            .name{
+                @include text($fs-3xl, $fw-light, $text-c1-dark);
+                margin: 9px 0;
+            }
+            .description{
+                @include text($fs-base, $fw-regular, $text-c2-dark);
+            }
+            .size{
+                h5{
+                    @include text($fs-2xl4, $fw-medium, $text-c1-success);
+                }
+                .list-item{
+                    display: flex;
+                    .item{
+                        margin-top: 18px;
+                        @include button(6px, 10px, $bg-c1-secondary);
+                        @include text($fs-2xl4, $fw-semiBold, $text-c3-dark);
+                        opacity: 0.5;
+                        margin-right: 21px;
+                    }
+                }
+            }
+            .price{
+                margin: 17px 0;
+                @include text($fs-3xl, $fw-semiBold, $text-c1-danger);
+            }
+            .amount{
+                button{
+                    padding: 0px 15px;
+                    @include text($fs-3xl, $fw-regular, $text-c2-light);
+                    @extend .background-linear-1;
+                }
+                .number{
+                    text-align: center;
+                    border: none;
+                    @include text($fs-3xl, $fw-regular, $text-c1-dark);
+                    width: 59px;
+                }
+            }
+            .add{
+                margin-top: 9px;
+                padding: 10px 30px;
+                border: none;
+                @include text($fs-2xl4, $fw-medium, $text-c2-light);
+                @extend .background-linear-2;
+            }
+        }
+    }
+}
 
 // Product
 @import './product';

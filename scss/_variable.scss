@@ -55,8 +55,7 @@ $bg-c1-violet: #AE18E2;     // submit button
 $bd-5-s-violet: 5px solid #AE18E2;     // input
 
 // BUTTON
-@mixin button($py, $bg) {
-    padding: $py 0;
-    text-align: center;
+@mixin button($py, $px, $bg) {
+    padding: $py $px;
     background: $bg;
 }

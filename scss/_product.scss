@@ -1,5 +1,6 @@
 .product{
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
     background: $bg-c1-light;
     .container{
         .title{
@@ -40,7 +41,7 @@
                         height: 64px;
                         a{
                             width: 52%;
-                            @include button(15px,  $bg-c2-warning);
+                            @include button(15px, 45px, $bg-c2-warning);
                             p{
                                 @include text($fs-2xl4, $fw-extraLight, $text-c1-dark);
                             }
