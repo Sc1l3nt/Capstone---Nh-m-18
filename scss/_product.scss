@@ -41,7 +41,8 @@
                         height: 64px;
                         a{
                             width: 52%;
-                            @include button(15px, 45px, $bg-c2-warning);
+                            text-align: center;
+                            @include button(15px, 0px, $bg-c2-warning);
                             p{
                                 @include text($fs-2xl4, $fw-extraLight, $text-c1-dark);
                             }

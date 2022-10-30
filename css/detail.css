@@ -170,7 +170,8 @@ input[type=number] {
 }
 .product .container .row .col .item .buttons a {
   width: 52%;
-  padding: 15px 45px;
+  text-align: center;
+  padding: 15px 0px;
   background: #E1B067;
 }
 .product .container .row .col .item .buttons a p {

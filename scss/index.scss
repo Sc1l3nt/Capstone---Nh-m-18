@@ -1,14 +1,120 @@
 // Variable
-@import './variable';
+@import "./variable.scss";
 
 // Base
-@import './base';
+@import "./base";
 
 // Header
 
 // Carousel
+.carousel {
+    position: relative;
+    max-height: 600px;
+    .bg-img {
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .slick-item {
+        position: relative;
+        z-index: 10;
+        max-width: 1400px;
+        margin: auto;
+
+        .slider {
+            .item {
+                display: flex;
+                img {
+                    width: 70%;
+                }
+
+                .info {
+                    width: 30%;
+                    margin-top: 10%;
+
+                    h3 {
+                        @include text($fs-4xl, $fw-light, $text-c1-dark);
+                    }
+
+                    p {
+                        @include text($fs-2xl, $fw-light, $text-c1-dark);
+                        margin-bottom: 50px;
+                    }
+
+                    a {
+                        @include button(13px, 35px, $bg-c1-warning);
+                        @include text($fs-2xl4, $fw-extraLight, $text-c1-light);
+                    }
+                }
+            }
+
+            .slick-arrow {
+                margin-top: -5%;
+                z-index: 20;
+                height: 60px;
+                width: 40px;
+                &::before {
+                    display: none;
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+                }
+                &::after {
+                    content: '';
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &.slick-next::after{
+                    background-image: url('../img/Polygon 1.png');
+                }
+                &.slick-prev::after{
+                    background-image: url('../img/Polygon 2.png');
+                }
+            }
+
+            .slick-dots {
+                transform: translateY(-200px);
+                li {
+                    button {
+                        &::before{
+                            display: none;
+                        }
+                        &::after {
+                            content: "";
+                            height: 15px;
+                            width: 15px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-radius: 50%;
+                            border: $bd-2-s-secondary-c1;
+                            background: $bg-c1-light;
+                        }
+                    }
+
+                    &.slick-active {
+                        button {
+                            &:after {
+                                border-width: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Product
-@import './product';
+@import "./product";
 
 // Footer

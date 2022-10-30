@@ -52,7 +52,12 @@ $bg-c1-violet: #AE18E2;     // submit button
 }
 
 // BORDER
-$bd-5-s-violet: 5px solid #AE18E2;     // input
+$bd-5-s-violet: 5px solid #AE18E2;                     // input
+$bd-2-s-secondary-c1: 2px solid rgba(0, 0, 0, 0.13);   // slick dot
+$bd-2-s-secondary-c2: 2px solid rgba(0, 0, 0, 0.24) ;   // slick arrow
+
+// SHADOW
+$bs-c2-dark: 0px 4px 4px rgba(0, 0, 0, 0.25);   // slick arrow
 
 // BUTTON
 @mixin button($py, $px, $bg) {

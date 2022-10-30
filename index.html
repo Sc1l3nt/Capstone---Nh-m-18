@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Slick -->
+    <link rel="stylesheet" href="./demoSlick/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./demoSlick/slick-1.8.1/slick/slick-theme.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.min.css">
 
@@ -27,7 +31,43 @@
 
     <!-- Carousel -->
     <section class="carousel">
-        <div></div>
+        <div class="slick-item">
+            <section id="carousel-slick" class="slick slider">
+                <div>
+                    <div class="item" id="0">
+                        <img src="./img/image 4.png">
+                        <div class="info">
+                            <h3>Product name</h3>
+                            <p>Product description ...</p>
+                            <a>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item" id="1">
+                        <img src="./img/image 4.png">
+                        <div class="info">
+                            <h3>Product name</h3>
+                            <p>Product description ...</p>
+                            <a>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item" id="2">
+                        <img src="./img/image 4.png">
+                        <div class="info">
+                            <h3>Product name</h3>
+                            <p>Product description ...</p>
+                            <a>Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="bg-img">
+            <img src="./img/image 6.png" alt="">
+        </div>
     </section>
 
     <!-- List product -->
@@ -45,7 +85,9 @@
                             <p>short descript</p>
                         </div>
                         <div class="buttons">
-                            <a><p>Buy now</p></a>
+                            <a>
+                                <p>Buy now</p>
+                            </a>
                             <div>
                                 <h5>85$</h5>
                             </div>
@@ -60,7 +102,9 @@
                             <p>short descript</p>
                         </div>
                         <div class="buttons">
-                            <a><p>Buy now</p></a>
+                            <a>
+                                <p>Buy now</p>
+                            </a>
                             <div>
                                 <h5>85$</h5>
                             </div>
@@ -75,7 +119,9 @@
                             <p>short descript</p>
                         </div>
                         <div class="buttons">
-                            <a><p>Buy now</p></a>
+                            <a>
+                                <p>Buy now</p>
+                            </a>
                             <div>
                                 <h5>85$</h5>
                             </div>
@@ -105,6 +151,20 @@
 
     <!-- JS -->
     <script type="module" src="./controler/index.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="module"></script>
+    <script src="./demoSlick/slick-1.8.1/slick/slick.js" type="module" charset="utf-8"></script>
+    <script type="module">
+        $(document).on('ready', function () {
+            $(".slick").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
 </body>
 
 </html>

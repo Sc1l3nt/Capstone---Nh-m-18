@@ -5,7 +5,7 @@ function getAllProduct(id) {
     });
 
     promise.then(function (res) {
-        console.log('res:', res);
+        console.log('res');
         renderProductCard(res.data.content, id);
     });
 

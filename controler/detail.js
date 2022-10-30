@@ -69,7 +69,7 @@ function renderProductDetail(product) {
         })
     })(product.size);
     // Price
-    (function renderPrice(price) {
+    (function renderPrice(price, quantity) {
         let input = document.querySelector("#detail .amount .number");
         let value = 0;
         updateValue(input.value);
@@ -81,8 +81,11 @@ function renderProductDetail(product) {
         }
         // Plus
         let plus = document.querySelector("#detail .amount .plus");
-        plus.onclick = function () {
+        plus.onclick = function (quantity) {
             input.value = Number(input.value) + 1;
+            if (Number(input.value) > quantity) {
+                input.value = quantity;
+            }
             updateValue(input.value);
         };
         // Minus
@@ -99,6 +102,9 @@ function renderProductDetail(product) {
             if (Number(input.value) < 0) {
                 input.value = 0;
             }
+            if (Number(input.value) > quantity) {
+                input.value = quantity;
+            }
             updateValue(input.value);
         };
         input.onChange = function () {
@@ -108,5 +114,5 @@ function renderProductDetail(product) {
             updateValue(input.value);
         };
         //
-    })(product.price);
+    })(product.price, product.quantity);
 }
