@@ -1,0 +1,37 @@
+header {
+    background: $bg-c1-dark;
+
+    .flex-item {
+        a{
+            @include text($fs-base, $fw-light, $text-c1-light);
+        }
+        .cart {
+            margin-top: -10px;
+
+            img {
+                transform: translateY(-5px);
+            }
+
+            span {
+                @include text($fs-3xl, $fw-light, $text-c1-light)
+            }
+        }
+    }
+    .navbar{
+        button{
+            color: $text-c1-light;
+            position: absolute;
+            top: -45px;
+            right: 100px
+        }
+        .nav-link{
+            @include text($fs-2xl, $fw-light, $text-c1-dark);
+            opacity: 0.8;
+        }
+        .active{
+            @include text($fs-2xl, $fw-regular, $text-c1-dark);
+            opacity: 1;
+            border-bottom: $bd-2-s-dark;
+        }
+    }
+}

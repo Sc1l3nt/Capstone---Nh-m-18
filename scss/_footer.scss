@@ -1,0 +1,43 @@
+footer {
+    .main1 {
+        background: $bg-c4-secondary;
+    }
+
+    .main2 {
+        background: $bg-c3-secondary;
+    }
+
+    .row {
+        max-width: 1200px;
+        margin: auto;
+
+        h4 {
+            @include text($fs-2xl4, $fw-semiBold, $text-c1-dark);
+            margin-bottom: 15px
+        }
+
+        ul {
+            li {
+                a {
+                    @include text($fs-base, $fw-regular, $text-c1-dark);
+
+                    &:hover {
+                        color: $text-c1-secondary;
+                    }
+                }
+            }
+        }
+
+        p {
+            @include text($fs-base, $fw-regular, $text-c1-dark);
+        }
+
+        a{
+            @include text($fs-base, $fw-regular, $text-c1-danger);
+        }
+        .center{
+            border-left: $bd-2-s-secondary-c3;
+            border-right: $bd-2-s-secondary-c3;
+        }
+    }
+}

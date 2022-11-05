@@ -35,6 +35,9 @@ $text-c1-danger: #FC0303;      // money
 $bg-c1-dark: #000000;       // header
 $bg-c1-secondary: #CCCCCC;  // size number box
 $bg-c2-secondary: #DEDDDC;  // product money box
+$bg-c3-secondary: #D9D9D9;  // check box
+$bg-c4-secondary: #FAFAFA;  // footer bg
+$bg-c3-secondary: #ECECEC;   // footer bg
 $bg-c3-light: #F8F8F8;      // product box
 $bg-c2-light: #F5F5F5;      // all
 $bg-c1-light: #FFFCFC;      // product body
@@ -52,9 +55,11 @@ $bg-c1-violet: #AE18E2;     // submit button
 }
 
 // BORDER
-$bd-5-s-violet: 5px solid #AE18E2;                     // input
-$bd-2-s-secondary-c1: 2px solid rgba(0, 0, 0, 0.13);   // slick dot
+$bd-2-s-dark: 2px solid #000000;                        // header
+$bd-5-s-violet: 5px solid #AE18E2;                      // input
+$bd-2-s-secondary-c1: 2px solid rgba(0, 0, 0, 0.13);    // slick dot
 $bd-2-s-secondary-c2: 2px solid rgba(0, 0, 0, 0.24) ;   // slick arrow
+$bd-2-s-secondary-c3: 2px solid #DEDDDC;                // footer
 
 // SHADOW
 $bs-c2-dark: 0px 4px 4px rgba(0, 0, 0, 0.25);   // slick arrow

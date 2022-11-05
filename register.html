@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Nhóm 18 - Home</title>
+    <title>Nhóm 18 - Register</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="./demoSlick/slick-1.8.1/slick/slick-theme.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="./css/register.min.css">
 
 </head>
 
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 ms-3 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home</a>
+                        <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Men</a>
@@ -88,105 +88,42 @@
         </nav>
     </header>
 
-    <!-- Carousel -->
-    <section class="carousel">
-        <div class="slick-item">
-            <section id="carousel-slick" class="slick slider">
-                <div>
-                    <div class="item" id="0">
-                        <img src="./img/image 4.png">
-                        <div class="info">
-                            <h3>Product name</h3>
-                            <p>Product description ...</p>
-                            <a>Buy now</a>
-                        </div>
-                    </div>
+    <!-- Register -->
+    <section class="register">
+        <div class="container py-5">
+            <h1 class="text-center">Register</h1>
+            <div class="row">
+                <div class="col col-6 p-4">
+                    <input id="email" class="w-100" type="text" placeholder="email">
+                    <span id="err-email" class="err">(*)</span>
                 </div>
-                <div>
-                    <div class="item" id="1">
-                        <img src="./img/image 4.png">
-                        <div class="info">
-                            <h3>Product name</h3>
-                            <p>Product description ...</p>
-                            <a>Buy now</a>
-                        </div>
-                    </div>
+                <div class="col col-6 p-4">
+                    <input id="name" class="w-100" type="text" placeholder="name">
+                    <span class="err" id="err-name">(*)</span>
                 </div>
-                <div>
-                    <div class="item" id="2">
-                        <img src="./img/image 4.png">
-                        <div class="info">
-                            <h3>Product name</h3>
-                            <p>Product description ...</p>
-                            <a>Buy now</a>
-                        </div>
-                    </div>
+                <div class="col col-6 p-4">
+                    <input id="pass" class="w-100" type="password" placeholder="password">
+                    <span class="err" id="err-pas">(*)</span>
                 </div>
-            </section>
-        </div>
-        <div class="bg-img">
-            <img src="./img/image 6.png" alt="">
-        </div>
-    </section>
-
-    <!-- List product -->
-    <section class="product">
-        <div class="container">
-            <div class="title">
-                <h1>-Product Feature-</h1>
+                <div class="col col-6 p-4">
+                    <input id="phone" class="w-100" type="text" placeholder="phone">
+                    <span class="err " id="err-phone">(*)</span>
+                </div>
+                <div class="col col-6 p-4">
+                    <input id="pass-c" class="w-100" type="password" placeholder="password confirm">
+                    <span class="err " id="err-pas-c">(*)</span>
+                </div>
+                <div class="col col-6 p-4">
+                    <label>Gender</label>
+                    <input class="w3-radio" type="radio" name="gender" value='male'>
+                    <label>Male</label>
+                    <input class="w3-radio" type="radio" name="gender" value='female'>
+                    <label>Female</label>
+                    <span class="err " id="err-gender">(*)</span>
+                </div>
             </div>
-            <div id="list-product" class="row g-5">
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="item">
-                        <div class="img"><img src="./img/image 5.png" alt=""></div>
-                        <div class="info">
-                            <h3>Adidas Prophere</h3>
-                            <p>short descript</p>
-                        </div>
-                        <div class="buttons">
-                            <a>
-                                <p>Buy now</p>
-                            </a>
-                            <div>
-                                <h5>85$</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="item">
-                        <div class="img"><img src="./img/image 5.png" alt=""></div>
-                        <div class="info">
-                            <h3>Adidas Prophere</h3>
-                            <p>short descript</p>
-                        </div>
-                        <div class="buttons">
-                            <a>
-                                <p>Buy now</p>
-                            </a>
-                            <div>
-                                <h5>85$</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="item">
-                        <div class="img"><img src="./img/image 5.png" alt=""></div>
-                        <div class="info">
-                            <h3>Adidas Prophere</h3>
-                            <p>short descript</p>
-                        </div>
-                        <div class="buttons">
-                            <a>
-                                <p>Buy now</p>
-                            </a>
-                            <div>
-                                <h5>85$</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-end">
+                <button id="submit" type="submit">Submit</button>
             </div>
         </div>
     </section>
@@ -228,9 +165,10 @@
                 </div>
                 <div class="col-4 ps-4">
                     <h4>REGISTER</h4>
-                    <p>Create out account to manage everything you do to Nike, from you shopping preferences to you Nike+
+                    <p>Create out account to manage everything you do to Nike, from you shopping preferences to you
+                        Nike+
                         activity.</p>
-                    <a href="./register.html">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -270,8 +208,12 @@
         integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Model -->
+    <script src="./model/validation.js"></script>
+    <script src="./model/Data.js"></script>
+
     <!-- JS -->
-    <script async type="module" src="./controler/index.js"></script>
+    <script async type="module" src="./controler/register.js"></script>
 
     <!-- Slick JS -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="module"></script>

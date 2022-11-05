@@ -5,17 +5,20 @@
 @import "./base";
 
 // Header
+@import "./header";
 
 // Carousel
 .carousel {
     position: relative;
     max-height: 600px;
+    overflow: hidden;
     .bg-img {
         position: absolute;
         z-index: 5;
         bottom: 0;
         left: 0;
         width: 100%;
+
         img {
             width: 100%;
         }
@@ -30,6 +33,7 @@
         .slider {
             .item {
                 display: flex;
+                
                 img {
                     width: 70%;
                 }
@@ -59,12 +63,14 @@
                 z-index: 20;
                 height: 60px;
                 width: 40px;
+
                 &::before {
                     display: none;
                     height: 100%;
                     width: 100%;
                     overflow: hidden;
                 }
+
                 &::after {
                     content: '';
                     height: 100%;
@@ -73,21 +79,25 @@
                     top: 0;
                     left: 0;
                 }
-                &.slick-next::after{
+
+                &.slick-next::after {
                     background-image: url('../img/Polygon 1.png');
                 }
-                &.slick-prev::after{
+
+                &.slick-prev::after {
                     background-image: url('../img/Polygon 2.png');
                 }
             }
 
             .slick-dots {
                 transform: translateY(-200px);
+
                 li {
                     button {
-                        &::before{
+                        &::before {
                             display: none;
                         }
+
                         &::after {
                             content: "";
                             height: 15px;
@@ -118,3 +128,4 @@
 @import "./product";
 
 // Footer
+@import "./footer"

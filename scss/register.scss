@@ -1,0 +1,77 @@
+// Variable
+@import "./variable.scss";
+
+// Base
+@import "./base";
+
+// Header
+@import "./header";
+
+// Register
+.register {
+    .col {
+        position: relative;
+
+        input[type='text'], input[type='password'] {
+            border: none;
+            border-bottom: $bd-5-s-violet;
+            @include text ($fs-3xl, $fw-regular, $text-c1-dark);
+            outline: none;
+        }
+
+        label {
+            @include text ($fs-3xl, $fw-regular, $text-c1-dark);
+            margin-right: 85px
+        }
+
+        input[type='radio'] {
+            position: relative;
+            width: 1px;
+            height: 1px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 5;
+                top: -25px;
+                right: 0;
+                width: 50px;
+                height: 30px;
+                background: $bg-c3-secondary;
+                border-radius: 50%
+            }
+
+            &:checked {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 10;
+                    top: -20px;
+                    right: 10px;
+                    width: 30px;
+                    height: 18px;
+                    background: $bg-c1-violet;
+                    border-radius: 50%
+                }
+            }
+        }
+
+        .err {
+            display: none;
+            @include text ($fs-3xl, $fw-regular, $text-c2-danger);
+            position: absolute;
+            top: 25px;
+            right: 0;
+            width: 50px;
+            height: 50px;
+        }
+    }
+    button{
+        margin-top: 10px;
+        @include button(5px, 100px, $bg-c1-violet);
+        @include text($fs-3xl, $fw-regular, $text-c2-light)
+    }
+}
+
+// Footer
+@import "./footer"

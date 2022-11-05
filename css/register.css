@@ -1,0 +1,196 @@
+.background-linear-1 {
+  background: rgb(97, 129, 243);
+  background: linear-gradient(180deg, rgb(97, 129, 243) 0%, rgb(124, 151, 245) 99.48%);
+}
+
+.background-linear-2 {
+  background: rgb(62, 32, 248);
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, rgb(208, 23, 238) 89.71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+boby {
+  background: #F5F5F5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: #000000;
+}
+header .flex-item a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+header .flex-item .cart {
+  margin-top: -10px;
+}
+header .flex-item .cart img {
+  transform: translateY(-5px);
+}
+header .flex-item .cart span {
+  font-size: 30px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+header .navbar button {
+  color: #FFFFFF;
+  position: absolute;
+  top: -45px;
+  right: 100px;
+}
+header .navbar .nav-link {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.8;
+}
+header .navbar .active {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 1;
+  border-bottom: 2px solid #000000;
+}
+
+.register .col {
+  position: relative;
+}
+.register .col input[type=text], .register .col input[type=password] {
+  border: none;
+  border-bottom: 5px solid #AE18E2;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  outline: none;
+}
+.register .col label {
+  font-size: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-right: 85px;
+}
+.register .col input[type=radio] {
+  position: relative;
+  width: 1px;
+  height: 1px;
+}
+.register .col input[type=radio]::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: -25px;
+  right: 0;
+  width: 50px;
+  height: 30px;
+  background: #ECECEC;
+  border-radius: 50%;
+}
+.register .col input[type=radio]:checked::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -20px;
+  right: 10px;
+  width: 30px;
+  height: 18px;
+  background: #AE18E2;
+  border-radius: 50%;
+}
+.register .col .err {
+  display: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #F50E0E;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+.register button {
+  margin-top: 10px;
+  padding: 5px 100px;
+  background: #AE18E2;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFCFC;
+}
+
+footer .main1 {
+  background: #FAFAFA;
+}
+footer .main2 {
+  background: #ECECEC;
+}
+footer .row {
+  max-width: 1200px;
+  margin: auto;
+}
+footer .row h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 15px;
+}
+footer .row ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+footer .row ul li a:hover {
+  color: #CBC9C9;
+}
+footer .row p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+footer .row a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FC0303;
+}
+footer .row .center {
+  border-left: 2px solid #DEDDDC;
+  border-right: 2px solid #DEDDDC;
+}

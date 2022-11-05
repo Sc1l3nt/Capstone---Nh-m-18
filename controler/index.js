@@ -7,7 +7,7 @@
 
     promise.then(function (res) {
         console.log('res');
-        renderCarousel1(res.data.content, 2);
+        renderCarousel2(res.data.content, 2);
     });
 
     promise.catch(function (err) {

@@ -45,6 +45,53 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: #000000;
+}
+header .flex-item a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+header .flex-item .cart {
+  margin-top: -10px;
+}
+header .flex-item .cart img {
+  transform: translateY(-5px);
+}
+header .flex-item .cart span {
+  font-size: 30px;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+header .navbar button {
+  color: #FFFFFF;
+  position: absolute;
+  top: -45px;
+  right: 100px;
+}
+header .navbar .nav-link {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  opacity: 0.8;
+}
+header .navbar .active {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 1;
+  border-bottom: 2px solid #000000;
+}
+
 .detail .main {
   margin: 58px 65px 53px 65px;
 }
@@ -189,4 +236,43 @@ input[type=number] {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
+}
+
+footer .main1 {
+  background: #FAFAFA;
+}
+footer .main2 {
+  background: #ECECEC;
+}
+footer .row {
+  max-width: 1200px;
+  margin: auto;
+}
+footer .row h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 15px;
+}
+footer .row ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+footer .row ul li a:hover {
+  color: #CBC9C9;
+}
+footer .row p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+footer .row a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FC0303;
+}
+footer .row .center {
+  border-left: 2px solid #DEDDDC;
+  border-right: 2px solid #DEDDDC;
 }
